@@ -35,12 +35,12 @@ rodadas = 0
 
 
 #JOGO:
-print("DISPUTA DE PENALTIS:")
+print("DISPUTA DE PENALTIS:\n")
 #loop while que para somente o numero de rodadas chegar a 5
 while(rodadas<5):
     #caso if "vez = True" o Jogador chuta, e o Bot chuta caso contrario:
     if vez == True:
-        print("CHUTE:")
+        print("Vez de Chutar :")
         #imprimindo as escolhas:
         texto_escolhas()
         #input da escolha do jogador:
@@ -50,13 +50,13 @@ while(rodadas<5):
         #adicionando a lista o resultado do chute(O ou X):
         placarJogador.append(verifica_chute(escolhaJogador, escolhaBot))
         #trocando a vez:
-        vez = not vez
+        vez = not vez 
         #imprimindo o placar ao vivo:
-        print("PLACAR:")
-        print("Jogador: " , placarJogador)
-        print("Bot: " ,  placarBot)
+            #print("PLACAR:")
+            #print("Jogador: " , placarJogador)
+            #print("Bot: " ,  placarBot)
     else:
-        print("DEFESA:")
+        print("Vez de Defender:")
         #imprimindo as escolhas:
         texto_escolhas()
         #input da escolha do jogador:
